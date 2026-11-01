@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f4efe6;
+  --ink: #2b2925;
+  --soft: #6d675d;
+  --link: #7a5a3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1f1d1a;
+    --ink: #ece6da;
+    --soft: #a8a196;
+    --link: #d2b48c;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 18px/1.65 Georgia, "Times New Roman", serif;
+}
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 4rem 16px;
+}
+h1 { font-weight: normal; font-size: 2rem; margin: 0 0 1.5rem; }
+h2 { font-weight: normal; font-size: 1.15rem; margin: 2rem 0 0.25rem; }
+p { margin: 0 0 1rem; }
+a { color: var(--link); }
+nav { margin-top: 3rem; color: var(--soft); }
+nav a { margin-right: 1rem; }
